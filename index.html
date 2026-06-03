@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Darsh Patil | Student Portfolio</title>
+  <title>Darsh Patil | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <nav>
-      <h2>Darsh Patil</h2>
+  <header class="site-header">
+    <nav class="navbar">
+      <div class="logo">DP</div>
       <div class="nav-links">
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
@@ -20,85 +20,114 @@
     </nav>
 
     <section class="hero">
-      <h1>Hi, I'm Darsh Patil</h1>
-      <p>A student interested in computer science, technology, AI, and STEM problem-solving.</p>
-      <a class="button" href="https://www.linkedin.com/in/darsh-patil-39a0b1360/" target="_blank">View My LinkedIn</a>
+      <div class="hero-text">
+        <p class="eyebrow">Aspiring Software Developer • STEM Student</p>
+        <h1>Darsh Patil</h1>
+        <p class="subtitle">
+          I am a student interested in computer science, artificial intelligence, and solving real-world problems through technology.
+        </p>
+        <div class="hero-buttons">
+          <a class="primary-btn" href="#projects">View Projects</a>
+          <a class="secondary-btn" href="https://www.linkedin.com/in/darsh-patil-39a0b1360/" target="_blank">LinkedIn</a>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <h3>Quick Profile</h3>
+        <p><strong>School:</strong> BASIS Cedar Park</p>
+        <p><strong>Focus:</strong> Computer Science & STEM</p>
+        <p><strong>Skills:</strong> JavaScript, App Lab</p>
+        <p><strong>Location:</strong> Leander, TX</p>
+      </div>
     </section>
   </header>
 
   <main>
-    <section id="about" class="card">
+    <section id="about" class="section">
       <h2>About Me</h2>
       <p>
-        I am a rising high school student at BASIS Cedar Park with an interest in computer science,
-        software development, artificial intelligence, and STEM. I enjoy learning new technologies,
-        solving problems, competing in Science Olympiad, and building projects using JavaScript and App Lab.
+        I am a rising high school student with a strong interest in technology, programming, and STEM.
+        Through AP Computer Science Principles, Science Olympiad, athletics, martial arts, and volunteering,
+        I have developed problem-solving, teamwork, discipline, and leadership skills.
       </p>
     </section>
 
-    <section id="skills" class="card">
+    <section id="skills" class="section">
       <h2>Technical Skills</h2>
-      <ul>
-        <li><strong>Programming Language:</strong> JavaScript</li>
-        <li><strong>Development Platform:</strong> App Lab (Code.org)</li>
-        <li><strong>Computer Science Concepts:</strong> Variables, conditionals, loops, functions, lists, algorithms, and event-driven programming</li>
-        <li><strong>Computer Programs:</strong> Google Docs, Google Sheets, Google Slides, Microsoft Office</li>
-      </ul>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h3>Programming</h3>
+          <span>JavaScript</span>
+        </div>
+        <div class="skill-card">
+          <h3>Platform</h3>
+          <span>App Lab</span>
+        </div>
+        <div class="skill-card">
+          <h3>Concepts</h3>
+          <span>Variables • Loops • Functions • Lists • Algorithms</span>
+        </div>
+        <div class="skill-card">
+          <h3>Tools</h3>
+          <span>Google Workspace • Microsoft Office</span>
+        </div>
+      </div>
     </section>
 
-    <section id="projects" class="card">
-      <h2>Projects</h2>
-      <h3>AP CSP Grade Analyzer</h3>
-      <p>
-        Designed and developed an interactive grade analyzer application using JavaScript and App Lab.
-        The app allows students to enter assignment names and scores, store data in lists, calculate averages,
-        and display organized results.
-      </p>
-      <ul>
-        <li>Used JavaScript variables, conditionals, loops, functions, and lists</li>
-        <li>Created user input validation to improve accuracy</li>
-        <li>Applied problem-solving and debugging skills</li>
-      </ul>
+    <section id="projects" class="section">
+      <h2>Featured Project</h2>
+      <div class="project-card">
+        <div>
+          <p class="tag">JavaScript • App Lab</p>
+          <h3>AP CSP Grade Analyzer</h3>
+          <p>
+            Built an interactive application that helps students enter assignment names and scores,
+            calculate averages, and view organized grade results.
+          </p>
+        </div>
+        <ul>
+          <li>Used lists to store assignment names and scores</li>
+          <li>Created input validation for accurate data entry</li>
+          <li>Applied variables, conditionals, loops, and functions</li>
+          <li>Designed a simple user interface for easy grade tracking</li>
+        </ul>
+      </div>
     </section>
 
-    <section id="achievements" class="card">
+    <section id="achievements" class="section">
       <h2>Achievements & Activities</h2>
-
-      <h3>Science Olympiad - Division B</h3>
-      <ul>
-        <li>3rd Place - Metric Mastery</li>
-        <li>7th Place - Write It Do It</li>
-        <li>9th Place - Remote Sensing</li>
-      </ul>
-
-      <h3>Awards</h3>
-      <ul>
-        <li>President's Volunteer Service Award (PVSA) - Gold</li>
-        <li>Science Olympiad Regional Medalist</li>
-      </ul>
-
-      <h3>Activities</h3>
-      <ul>
-        <li>Lone Star Soccer Club - Select Soccer Player</li>
-        <li>Tang Soo Do Martial Arts - Red Belt Candidate</li>
-        <li>Community Volunteer</li>
-      </ul>
+      <div class="achievement-grid">
+        <div class="achievement-card">
+          <h3>Science Olympiad</h3>
+          <p>3rd Place - Metric Mastery</p>
+          <p>7th Place - Write It Do It</p>
+          <p>9th Place - Remote Sensing</p>
+        </div>
+        <div class="achievement-card">
+          <h3>PVSA Gold Award</h3>
+          <p>Recognized for commitment to community service and volunteerism.</p>
+        </div>
+        <div class="achievement-card">
+          <h3>Soccer</h3>
+          <p>Lone Star Soccer Club select player with experience in teamwork and competition.</p>
+        </div>
+        <div class="achievement-card">
+          <h3>Martial Arts</h3>
+          <p>Tang Soo Do student developing focus, discipline, perseverance, and leadership.</p>
+        </div>
+      </div>
     </section>
 
-    <section id="contact" class="card">
+    <section id="contact" class="section contact-section">
       <h2>Contact</h2>
-      <p><strong>Location:</strong> Leander, Texas</p>
       <p><strong>Email:</strong> Add your email here</p>
-      <p><strong>LinkedIn:</strong> 
-        <a href="https://www.linkedin.com/in/darsh-patil-39a0b1360/" target="_blank">
-          linkedin.com/in/darsh-patil-39a0b1360
-        </a>
-      </p>
+      <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/darsh-patil-39a0b1360/" target="_blank">linkedin.com/in/darsh-patil-39a0b1360</a></p>
+      <p><strong>Location:</strong> Leander, Texas</p>
     </section>
   </main>
 
   <footer>
-    <p>© 2026 Darsh Patil</p>
+    <p>© 2026 Darsh Patil • Student Portfolio</p>
   </footer>
 </body>
 </html>
